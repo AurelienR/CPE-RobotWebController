@@ -1,0 +1,219 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url('/stylesheets/fonts/../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+}
+
+/* line 15, ../scss/login.scss */
+html {
+  height: 100%;
+}
+
+/* line 20, ../scss/login.scss */
+body {
+  min-height: 100%;
+  position: relative;
+  background-color: #1a2021;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 29, ../scss/login.scss */
+#login {
+  top: 130px;
+  margin: 0px 0px;
+  left: calc(50% - 482.4px/2 );
+  background-color: #2d3e3f;
+  width: 482.4px;
+  min-height: 448.8px;
+  position: relative;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 15px 15px 60px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.6) 15px 15px 60px 0px;
+  box-shadow: rgba(0, 0, 0, 0.6) 15px 15px 60px 0px;
+  -webkit-transition-property: height;
+  -moz-transition-property: height;
+  -o-transition-property: height;
+  transition-property: height;
+  -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  transition-duration: 2s;
+}
+/* line 42, ../scss/login.scss */
+#login form {
+  position: absolute;
+  width: 100%;
+}
+/* line 46, ../scss/login.scss */
+#login form #title {
+  margin-top: 8%;
+  margin-left: 13%;
+  margin-right: 13%;
+  margin-bottom: 2.5%;
+  color: #FFFFFF;
+  font-size: 35px;
+  font-variant: small-caps;
+}
+/* line 60, ../scss/login.scss */
+#login form .champ {
+  font-size: 20px;
+  border: none;
+  padding: 4% 5%;
+  padding-right: 10%;
+  min-width: 55%;
+  margin-left: 13%;
+  margin-right: 13%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  -webkit-border-radius: 3px 3px;
+  -moz-border-radius: 3px / 3px;
+  border-radius: 3px / 3px;
+}
+/* line 79, ../scss/login.scss */
+#login form .btn {
+  color: #FFFFFF;
+  border: 0;
+  background: #c02b40;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 2.5% 6%;
+  margin-top: 0%;
+  margin-left: 15.5%;
+  -webkit-border-radius: 3px 3px;
+  -moz-border-radius: 3px / 3px;
+  border-radius: 3px / 3px;
+}
+/* line 91, ../scss/login.scss */
+#login form .btn:hover {
+  background-color: #FFFFFF;
+  color: #c02b40;
+}
+
+/* line 109, ../scss/login.scss */
+input:required {
+  border-color: none;
+  box-shadow: none;
+  background: none;
+}
+
+/* line 119, ../scss/login.scss */
+input:invalid {
+  background: url(../img/wrong.png) 96% center no-repeat white;
+}
+
+/* line 125, ../scss/login.scss */
+input:focus:invalid {
+  background: url(../img/wrong.png) 96% center no-repeat white;
+  -webkit-box-shadow: 0 0 6px #d32e3e;
+  -moz-box-shadow: 0 0 6px #d32e3e;
+  box-shadow: 0 0 6px #d32e3e;
+}
+
+/* line 134, ../scss/login.scss */
+input:valid {
+  background: url(../img/tick.png) 96% center no-repeat white;
+}
+
+/* line 141, ../scss/login.scss */
+input:focus:valid {
+  background: url(../img/tick.png) 96% center no-repeat white;
+  -webkit-box-shadow: 0 0 6px #5fd82f;
+  -moz-box-shadow: 0 0 6px #5fd82f;
+  box-shadow: 0 0 6px #5fd82f;
+}
+
+/* Boutton switch admin/user code source à partir du génerateur de code: http://proto.io/freebies/onoff/  */
+/* line 150, ../scss/login.scss */
+.onoffswitch {
+  position: relative;
+  width: 110px;
+  margin-left: 37%;
+  margin-top: 0%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  opacity: 0;
+}
+
+/* line 161, ../scss/login.scss */
+.onoffswitch-checkbox {
+  display: none;
+}
+
+/* line 165, ../scss/login.scss */
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #c02b40;
+  border-radius: 3px;
+}
+
+/* line 169, ../scss/login.scss */
+.onoffswitch-inner {
+  width: 200%;
+  margin-left: -100%;
+  -webkit-transition: margin, 0.3s, ease-in, 0s;
+  -moz-transition: margin, 0.3s, ease-in, 0s;
+  -o-transition: margin, 0.3s, ease-in, 0s;
+  transition: margin, 0.3s, ease-in, 0s;
+}
+
+/* line 173, ../scss/login.scss */
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  float: left;
+  width: 50%;
+  height: 44px;
+  padding: 0;
+  line-height: 44px;
+  font-size: 15px;
+  color: white;
+  font-family: 'Open sans', Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 178, ../scss/login.scss */
+.onoffswitch-inner:before {
+  content: "User";
+  padding-left: 23px;
+  background-color: #c02b40;
+  color: #FFFFFF;
+}
+
+/* line 183, ../scss/login.scss */
+.onoffswitch-inner:after {
+  content: "Admin";
+  padding-right: 23px;
+  background-color: #FFFFFF;
+  color: #c02b40;
+  text-align: right;
+}
+
+/* line 189, ../scss/login.scss */
+.onoffswitch-switch {
+  width: 12px;
+  margin: 10.5px;
+  background: #FFFFFF;
+  border: 2px solid #c02b40;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 66px;
+  -webkit-transition: all 0.3s ease-in;
+  -webkit-transition-delay: 0s;
+  -moz-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+}
+
+/* line 196, ../scss/login.scss */
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+
+/* line 199, ../scss/login.scss */
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}

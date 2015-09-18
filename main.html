@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Robot Control</title>
+<link rel="stylesheet" href="css/main.css">
+
+<!-- Script du Jquery-->
+<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body>
+	<header class="header">
+		<h1 class="header-h1">uRobot</h1>
+		<a class="header-a">Logout</a>
+		<h3 class="header-h3"></h3>
+		<img src="img/locked.png" width="50px" height="50px"
+			class="header-unlock"></img>
+
+	</header>
+
+
+
+	<section class="map">
+		<!-- ICI CANVAS-->
+		<canvas id="myCanvas">
+            Votre navigateur ne supporte pas les canvas
+        </canvas>
+
+	</section>
+	<section class="commande">
+		<table>
+			<tr>
+				<td></td>
+				<!-- Up -->
+				<td><img id="up" class="btn_deplacement" alt="Haut"
+					src="img/up.png" /></td>
+				<td></td>
+			</tr>
+			<tr>
+				<!-- Left -->
+				<td><img id="left" class="btn_deplacement" alt="Gauche"
+					src="img/left.png" /></td>
+				<!-- Down -->
+				<td><img id="down" class="btn_deplacement" alt="Bas"
+					src="img/down.png" /></td>
+				<!-- Right -->
+				<td><img id="right" class="btn_deplacement" alt="Droite"
+					src="img/right.png" /></td>
+			</tr>
+		</table>
+	</section>
+
+	<p id="paragraphe"></p>
+
+	<section class="chart">
+		<div id="memoirelibre" style="height: 400px; width: 1000px;"></div>
+	</section>
+
+
+
+
+
+</body>
+<!-- Script refresher canvas et données robot -->
+<script type="text/javascript" src="js/refresher.js"></script>
+<!-- Script handler de page -->
+<script type="text/javascript" src="js/pagehandler.js"></script>
+<!-- Script graph -->
+<script type="text/javascript" src="js/canvasjs.min.js"></script>
+<script type="text/javascript" src="js/data-robot.js"></script>
+<!-- Script commandes robots -->
+<script type="text/javascript" src="js/deplacement.js"></script>
+</html>
